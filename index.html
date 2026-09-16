@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target Hunter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="topbar">
+        <div class="title-wrap">
+          <p class="eyebrow">ARCADE SHOOTER</p>
+          <h1>Target Hunter</h1>
+        </div>
+        <button id="start-button" type="button">Start Game</button>
+      </header>
+
+      <section class="hud" aria-label="Game information">
+        <div class="stat">
+          <span class="label">Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="stat">
+          <span class="label">Time</span>
+          <strong id="time">30</strong>
+        </div>
+        <div class="stat">
+          <span class="label">Best</span>
+          <strong id="best-score">0</strong>
+        </div>
+      </section>
+
+      <div class="arena-wrap">
+        <canvas id="game-canvas" width="900" height="520" aria-label="Target shooting game"></canvas>
+        <div id="message" class="message" hidden></div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
